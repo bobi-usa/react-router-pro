@@ -1,6 +1,7 @@
 import Layout from '../page/Layout'
 import Board from '../page/Board'
 import About from '../page/About'
+import NotFound from '../page/NotFound'
 import { createBrowserRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
       },
     ]
   },
+  // 404路由：放在数组末尾，以 * 作为路由path
+  {
+    path: '*',
+    element: <NotFound />
+  }
 ])
 
 export default router
