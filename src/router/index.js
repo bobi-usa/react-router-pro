@@ -9,8 +9,9 @@ const router = createBrowserRouter([
     // 注意: 这里写的是JSX, 并不是和Vue一样的组件名
     element: <Layout />,
     children: [
+      // 设置为默认二级路由 一级路由访问的时候 默认渲染此二级路由
       {
-        path: '/board',
+        index: true,
         element: <Board />,
       },
       {
