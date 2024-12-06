@@ -1,5 +1,6 @@
 import Login from '../page/Login'
 import Article from '../page/Article'
+import Post from '../page/Post'
 import { createBrowserRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: '/article',
     element: <Article />,
+  },
+  {
+    path: '/post/:id/:name',
+    element: <Post />,
   },
 ])
 
