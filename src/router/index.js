@@ -2,9 +2,11 @@ import Layout from '../page/Layout'
 import Board from '../page/Board'
 import About from '../page/About'
 import NotFound from '../page/NotFound'
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
+  // url 带#
+  // const router = createHashRouter([
   {
     path: '/',
     // 注意: 这里写的是JSX, 并不是和Vue一样的组件名
